@@ -1,0 +1,434 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    margin-top: 3.62rem;
+}
+
+header { /* Fixed here */
+    background: linear-gradient(90deg, #07a15e, #a2d98e);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #a2d98e;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: #333;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #098B5A;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+main { /* Fixed here */
+    flex: 1;
+    padding: 1rem;
+    margin-top: 3.62rem;
+}
+
+footer { /* Fixed here */
+    width: 100%;
+    background: linear-gradient(90deg, #07a15e, #a2d98e);
+    padding: 1rem 12px;
+    text-align: center;
+}
+
+video { /* Fixed here */
+    display: block;
+    margin-top: -16px;
+    margin-left: -16px;
+    width: 102.15%;
+    height: auto;
+    object-fit: cover;
+}
+
+.background-video { /* Fixed here */
+    position: fixed;
+    top: 0;
+    left: calc(50% + 16px);
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    margin-top: -16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header { /* Fixed here */
+        padding: 0.5rem 0;
+    }
+}
+
+/* Handymanservices Page Specific Styles */
+body.handymanservices .container {
+    padding: 15px;
+}
+
+body.handymanservices .services-section,
+body.handymanservices .about-section,
+body.handymanservices .gallery-section,
+body.handymanservices .reviews-section,
+body.handymanservices .contact-section {
+    width: 100%;
+    height: 1300px;
+    padding: 1rem 0;
+}
+
+body.handymanservices .service,
+body.handymanservices .about,
+body.handymanservices .gallery,
+body.handymanservices .reviews,
+body.handymanservices .contact {
+    text-align: center;
+}
+
+body.handymanservices .handymanservices-img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    max-height: 1300px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+body.handymanservices .handymanservices-img {
+    text-align: center;
+}
+
+
+/* Added rules for centering images on the "index" page */
+body.index .service img,
+body.index .about img,
+body.index .gallery img,
+body.index .reviews img,
+body.index .contact img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Renovations Page Specific Styles */
+body.renovations .container {
+    padding: 15px;
+}
+
+body.renovations .services-section,
+body.renovations .about-section,
+body.renovations .gallery-section,
+body.renovations .reviews-section,
+body.renovations .contact-section {
+    width: 100%;
+    height: 500px;
+    padding: 1rem 0;
+}
+
+body.renovations .service,
+body.renovations .about,
+body.renovations .gallery,
+body.renovations .reviews,
+body.renovations .contact {
+    text-align: center;
+}
+
+body.renovations .renovation-service {
+    text-align: center;
+}
+
+/* Outdoorservices Page Specific Styles */
+body.outdoorservices .container {
+    padding: 15px;
+}
+
+body.outdoorservices .services-section,
+body.outdoorservices .about-section,
+body.outdoorservices .gallery-section,
+body.outdoorservices .reviews-section,
+body.outdoorservices .contact-section {
+    width: 100%;
+    height: 1300px;
+    padding: 1rem 0;
+}
+
+body.outdoorservices .service,
+body.outdoorservices .about,
+body.outdoorservices .gallery,
+body.outdoorservices .reviews,
+body.outdoorservices .contact {
+    text-align: center;
+}
+
+body.outdoorservices .outdoor-img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    max-height: 1300px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+body.outdoorservices .outdoor-img {
+    text-align: center;
+}
+
+/* Added rules for centering images on the "outdoorservices" page */
+body.outdoorservices .service img,
+body.outdoorservices .about img,
+body.outdoorservices .gallery img,
+body.outdoorservices .reviews img,
+body.outdoorservices .contact img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* About Page Specific Styles */
+body.about .container {
+    padding: 15px;
+}
+
+body.about .services-section,
+body.about .about-section,
+body.about .gallery-section,
+body.about .reviews-section,
+body.about .contact-section {
+    width: 100%;
+    height: 1200px;
+    padding: 1rem 0;
+}
+
+body.about .service,
+body.about .about,
+body.about .gallery,
+body.about .reviews,
+body.about .contact {
+    text-align: center;
+}
+
+body.about .about-img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    max-height: 1200px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+body.about .about-img {
+    text-align: center;
+}
+
+body.about .service img,
+body.about .about img,
+body.about .gallery img,
+body.about .reviews img,
+body.about .contact img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Page Specific Styles */
+body.contact .container {
+    padding: 15px;
+}
+
+body.contact .services-section,
+body.contact .about-section,
+body.contact .gallery-section,
+body.contact .reviews-section,
+body.contact .contact-section {
+    width: 100%;
+    height: 1200px;
+    padding: 1rem 0;
+}
+
+body.contact .service,
+body.contact .about,
+body.contact .gallery,
+body.contact .reviews,
+body.contact .contact {
+    text-align: center;
+}
+
+body.contact .contact-img {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    max-height: 1200px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+body.contact .contact-img {
+    text-align: center;
+}
+
+body.contact .service img,
+body.contact .about img,
+body.contact .gallery img,
+body.contact .reviews img,
+body.contact .contact img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Add the new button styles here: */
+
+.service button {
+    position: absolute;
+    top: 422px;
+    left: 686px;
+    transform: translate(-50%, -50%);
+    padding: 14px 75px;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.service {
+    position: relative;
+}
+
+.service button a {
+    text-decoration: none;
+}
+
+.service .second-button {
+    position: absolute;
+    top: 412px;  /* You can adjust these values */
+    left: 910px; /* to position the second button */
+    transform: translate(-50%, -50%);
+    padding: 14px 75px;
+    background-color: transparent;
+    color: #A2D98E;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.service .second-button a {
+    color: #A2D98E;
+    text-decoration: none;
+}
+
+.service .third-button {
+    position: absolute;
+    top: 422px;  /* You can adjust these values */
+    left: 1136px; /* to position the second button */
+    transform: translate(-50%, -50%);
+    padding: 14px 75px;
+    background-color: transparent;
+    color: #A2D98E;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.service .third-button a {
+    text-decoration: none;
+}
+
+.about button {
+    position: absolute;
+    top: 429px;
+    left: 668px;
+    transform: translate(-50%, -50%);
+    padding: 14px 75px;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.about {
+    position: relative;
+}
+
+.about button a {
+    text-decoration: none;
+}
